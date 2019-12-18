@@ -11,128 +11,104 @@
 
 %---------------------------------------------------------
   \cventry
-    {Software Architect} % Job title
-    {Omnious. Co., Ltd.} % Organization
-    {Seoul, S.Korea} % Location
-    {Jun. 2017 - May. 2018} % Date(s)
+    {Research Assistant, Advisor: Dr. Ya Wang} % Title and Advisor
+    {Liquid Crystal Optical Shutter on Passive Infrared Sensor for True Presence Detection} % Project title
+    {College Station, TX, USA} % Location
+    {Aug. 2018 - Present} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Provisioned an easily managable hybrid infrastructure(Amazon AWS + On-premise) utilizing IaC(Infrastructure as Code) tools like Ansible, Packer and Terraform.}
-        \item {Built fully automated CI/CD pipelines on CircleCI for containerized applications using Docker, AWS ECR and Rancher.}
-        \item {Designed an overall service architecture and pipelines of the Machine Learning based Fashion Tagging API SaaS product with the micro-services architecture.}
-        \item {Implemented several API microservices in Node.js Koa and in the serverless AWS Lambda functions.}
-        \item {Deployed a centralized logging environment(ELK, Filebeat, CloudWatch, S3) which gather log data from docker containers and AWS resources.}
-        \item {Deployed a centralized monitoring environment(Grafana, InfluxDB, CollectD) which gather system metrics as well as docker run-time metrics.}
+        \item Solved the issue that motions sensors (PIR sensors) could not detect stationary occupants.
+        \item Created a liquid crystal (LC) infrared shutter that can modulate long-wave infrared radiation with low driving voltage and ultra low power consumption (4.8V driving voltage with $<$10nA).
+        \item Manufactured Polymer Dispersed Liquid Crystal (PDLC) infrared shutter with 8\% modulation degree.
+        \item Developed a synchronized low-energy electronically-chopped PIR sensor for true presence detection by applied the created LC shutter to a PIR sensor packaged in an extremely low power embedded system ($\sim20\mu$W) [patent pending].  
+        \item Conducted experiments for presence detection. Reached 99.8\% accuracy for true presence detection and over 97.7\% accuracy for realistic long-term ($>$20 hours) test consisting of multiple activities. 
+        \item Optimized the control strategy of lighting and HVAC system with distributed sensor network.  
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Co-founder \& Software Engineer} % Job title
-    {PLAT Corp.} % Organization
-    {Seoul, S.Korea} % Location
-    {Jan. 2016 - Jun. 2017} % Date(s)
+    {Research Assistant, Advisor: Dr. Ya Wang} % Title and Advisor
+    {Compressive Sensing for Human Localization Using Single Thermopile Pixel Sensor} % Project title
+    {College Station, TX, USA} % Location
+    {Aug. 2018 - Mar. 2019} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Implemented RESTful API server for car rental booking application(CARPLAT in Google Play).}
-        \item {Built and deployed overall service infrastructure utilizing Docker container, CircleCI, and several AWS stack(Including EC2, ECS, Route 53, S3, CloudFront, RDS, ElastiCache, IAM), focusing on high-availability, fault tolerance, and auto-scaling.}
-        \item {Developed an easy-to-use Payment module which connects to major PG(Payment Gateway) companies in Korea.}
+        \item Integrated one thermopile sensor and rotating optical mask to acquire compressive infrared signals from human.
+        \item Designed a random binary mask to compress the radiation within the field of view (FOV) [patent pending].
+        \item Built a mathematical model that shows the linear relationship among the output signal of sensor, the rotating mask and radiation distributions. Found the relationship could be solved by compressive sensing theory.
+        \item Reconstructed spatial radiation distributions using basis pursuit denoising algorithm to recover localization information.
+        \item Reached over 90\% accuracy for localization of indoor the human object with a very low cost (less than \$10).
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Researcher} % Job title
-    {Undergraduate Research, Machine Learning Lab(Prof. Seungjin Choi)} % Organization
-    {Pohang, S.Korea} % Location
-    {Mar. 2016 - Exp. Jun. 2017} % Date(s)
+    {Research Assistant} % Title and Advisor
+    {Co-Mentor of Senior Design Project: Occupant-centered Light and HVAC Control Using Machine Learning for Human Comfort and Energy Efficiency} % Project title
+    {College Station, TX, USA} % Location
+    {Fall 2019} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Researched classification algorithms(SVM, CNN) to improve accuracy of human exercise recognition with wearable device.}
-        \item {Developed two TIZEN applications to collect sample data set and to recognize user exercise on SAMSUNG Gear S.}
+        \item Guided and managed the team to build a lighting and HVAC control system under \$100 budget. 
+        \item Applied machine learning technology with multiple sensors (temperature, humidity, motion, and light sensors) to analyze the environmental and human factors.  
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+%\vspace{1mm}
+\cventry
+{Research Assistant, Advisor: Dr. Ya Wang} % Title and Advisor
+{Passive Infrared Sensor for Indoor Localization and Tracking} % Project title
+{Stony Brook, NY, USA} % Location
+{Sept. 2017 - Mar. 2018} % Date(s)
+{
+  \begin{cvitems} % Description(s) of tasks/responsibilities
+    \item Used a single passive infrared (PIR) and an optical shutter embedded with micro-controller unit (MCU) in the device to analyze occupancy status of indoor environment, such as presence, localization, and facial direction. 
+    \item Utilized a innovative rotating optical shutter in front of the PIR sensor to modulation the received infrared radiation in a nonlinear manner.
+    \item Extracted two features from the analog signals from PIR sensors (peak to peak value, and pulse width). 
+    \item Applied machine learning algorithms (SVM and Neural Network) to improve the performance in predicting and classifying occupancy situations that reached 98\% accuracy in localization.  
+    \item Extended the functionality of PIR sensors in indoor occupancy detection with high performance, such as human tracking with 0.44 m RSME, localization with 98\% accuracy and facial direction detection with 83\% accuracy. 
+  \end{cvitems}
+}
+
+%---------------------------------------------------------
+  \cventry
+    {Research Assistant, Advisor: Dr. Ya Wang} % Title and Advisor
+    {Long-term True Presence Detection Platform} % Project title
+    {Stony Brook, NY, USA} % Location
+    {Jan. 2018 - Jun. 2018} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item Utilized the low-power Lavet stepper motor ($<10$mA) to drive a machanical optical shutter on PIR sensors for true presence detection that could detect both stationary and moving occupants [patent pending].
+        \item Built a long-term experiment platform consists of Raspberry Pi, Pi camera, Shutterd PIR sensors and MCU.
+        \item Used computer vision algorithms (YoLo and R-CNN) on videos to extract presence information as groundtruth.
+        \item Reached 97\% accuracy for classifying occupied and unoccupied scenes from 31-hour experiment.
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Software Engineer \& Security Researcher (Compulsory Military Service)} % Job title
-    {R.O.K Cyber Command, MND} % Organization
-    {Seoul, S.Korea} % Location
-    {Aug. 2014 - Apr. 2016} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Lead engineer on agent-less backtracking system that can discover client device's fingerprint(including public and private IP) independently of the Proxy, VPN and NAT.}
-        \item {Implemented a distributed web stress test tool with high anonymity.}
-        \item {Implemented a military cooperation system which is web based real time messenger in Scala on Lift.}
-      \end{cvitems}
-    }
+  {Instructor: Dr. Emre Salman} % Title and Advisor
+  {VLSI Course Project: VLSI Design for 8-bit Adder} % Project title
+  {Stony Brook, NY, USA} % Location
+  {Fall 2016} % Date(s)
+  {
+    \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item Developed an 8-bit CSA adder with 45nm CMOS technology using Cadence software. The final design showed low power of 1.184 mW, low area of 1257 $\mu m^2$, and high speed of 4.34 GHz.
+    \end{cvitems}
+  }
 
 %---------------------------------------------------------
   \cventry
-    {Game Developer Intern at Global Internship Program} % Job title
-    {NEXON} % Organization
-    {Seoul, S.Korea \& LA, U.S.A} % Location
-    {Jan. 2013 - Feb. 2013} % Date(s)
+    {Teaching Assistant} % Title and Advisor
+    {Stony Brook University, Department of ECE} % Project title
+    {Stony Brook, NY, USA} % Location
+    {Aug. 2015 - Dec. 2017} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed in Cocos2d-x an action puzzle game(Dragon Buster) targeting U.S. market.}
-        \item {Implemented API server which is communicating with game client and In-App Store, along with two other team members who wrote the game logic and designed game graphics.}
-        \item {Won the 2nd prize in final evaluation.}
+        \item Embedded Microprocessor Systems Design (\textit{Fall 2016}), Digital Systems Design (\textit{Spring 2016}), Digital Signal Processing: Theory (\textit{Fall 2015}) 
       \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Researcher for <Detecting video’s torrents using image similarity algorithms>} % Job title
-    {Undergraduate Research, Computer Vision Lab(Prof. Bohyung Han)} % Organization
-    {Pohang, S.Korea} % Location
-    {Sep. 2012 - Feb. 2013} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Researched means of retrieving a corresponding video based on image contents using image similarity algorithm.}
-        \item {Implemented prototype that users can obtain torrent magnet links of corresponding video relevant to an image on web site.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Software Engineer Trainee} % Job title
-    {Software Maestro (funded by Korea Ministry of Knowledge and Economy)} % Organization
-    {Seoul, S.Korea} % Location
-    {Jul. 2012 - Jun. 2013} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Performed research memory management strategies of OS and implemented in Python an interactive simulator for Linux kernel memory management.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Software Engineer} % Job title
-    {ShitOne Corp.} % Organization
-    {Seoul, S.Korea} % Location
-    {Dec. 2011 - Feb. 2012} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed a proxy drive smartphone application which connects proxy driver and customer. Implemented overall Android application logic and wrote API server for community service, along with lead engineer who designed bidding protocol on raw socket and implemented API server for bidding.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Freelance Penetration Tester} % Job title
-    {SAMSUNG Electronics} % Organization
-    {S.Korea} % Location
-    {Sep. 2013, Mar. 2011 - Oct. 2011} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Conducted penetration testing on SAMSUNG KNOX, which is solution for enterprise mobile security.}
-        \item {Conducted penetration testing on SAMSUNG Smart TV.}
-      \end{cvitems}
-      %\begin{cvsubentries}
-      %  \cvsubentry{}{KNOX(Solution for Enterprise Mobile Security) Penetration Testing}{Sep. 2013}{}
-      %  \cvsubentry{}{Smart TV Penetration Testing}{Mar. 2011 - Oct. 2011}{}
-      %\end{cvsubentries}
     }
 
 %---------------------------------------------------------
