@@ -13,12 +13,13 @@
     {Research Assistant, Advisor: Dr. Ya Wang} % Title and Advisor
     {SLEEPIR Sensor Network for Human Presence Detection in Residential Buildings} % Project title
     {College Station, TX, USA} % Location
-    {Dec. 2019 - Present} % Date(s)
+    {Dec. 2019 - May. 2021} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item Built a wireless sensor network. Each end device contains multiple sensors, including SLEEPIR presence sensor, motion sensors and temperature/humidity sensor.
-        \item Implemented a hub that receives report from end devices and controls smart thermostats via a cloud service.
-        \item Built the thermal transfer model of indoor environment and found relationship between the signals of sensors to environmental conditions.
+        \item Built a wireless sensor network using Bluetooth Low Energy (BLE). Each end device contains an ARM microcontroller and multiple sensors, including SLEEPIR presence sensor, motion sensors and temperature/humidity sensor.
+        \item Implemented a hub using Raspberry Pi (Linux system) that receives report from end devices and controls smart thermostats via a cloud service.
+        \item Used Qt to develop a GUI to visualize collected data.
+        \item Developed an adaptive detection algorithm with the thermal model of the sensor node.
       \end{cvitems}
     }
 %---------------------------------------------------------
@@ -26,15 +27,17 @@
     {Research Assistant, Advisor: Dr. Ya Wang} % Title and Advisor
     {Liquid Crystal Optical Shutter on Passive Infrared Sensor for True Presence Detection} % Project title
     {College Station, TX, USA} % Location
-    {Aug. 2018 - Present} % Date(s)
+    {Aug. 2018 - May. 2021} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item Solved the common issue that all commercial motions sensors (PIR sensors) could not detect stationary occupants.
-        \item Created a liquid crystal (LC) infrared shutter that can modulate long-wave infrared radiation with low driving voltage and ultra low power consumption ($<0.1\mu$A).
-        \item Manufactured Polymer Dispersed Liquid Crystal (PDLC) infrared shutter with high contrast ratio.
-        \item Developed a synchronized low-energy electronically-chopped PIR sensor for true presence detection by applying the created LC shutter to a PIR sensor and being packaged in an extremely low power embedded system ($\sim20\mu$W).
-        \item Designed realistic protocols for experiments which cover most regular daily actions and activities. 
-        \item Extracted statistical features and ran machine learning algorithms (NN, SVM, Random Forest, etc.) for presence detection.
+        \item Devised a Polymer Dispersed Liquid Crystal (PDLC) infrared shutter that can modulate long-wave infrared radiation with low driving voltage and ultra low power consumption.
+        \item Developed a synchronized low-energy electronically-chopped PIR sensor for true presence detection by applying the created LC shutter to a PIR sensor and being packaged in an ultra low power embedded system.
+        \item Designed electrical schematic of the sensor node (Altium) and soldered the PCB board.
+        \item Developed embedded C programs in ARM microncontrollers with interfaces (ADC, GPIO, I2C, SPI, UART).
+        \item Used ARM toolchain to develop and compile embedded software on ARM cortex-M microcontrollers.
+        \item Applied version control tool (Git) to collabrate with teammates.
+        \item Extracted statistical features in Python language and ran machine learning algorithms with toolbox (scikit-learn) for presence detection.
         \item Reached 99.9\% accuracy for true presence detection and over 97.7\% accuracy for realistic, long-term test. 
       \end{cvitems}
     }
@@ -46,10 +49,11 @@
   {Jun. 2020 - Aug. 2020} % Date(s)
   {
     \begin{cvitems} % Description(s) of tasks/responsibilities
-      \item Integrated an automated test framework, RobotFramework, to test the behavior of a tool developed by the team.
-      \item Designed over 100 and implement over 40 test cases that cover the functionality test, multi-threading test, performance test, and memory test.
-      \item Wrote helper scripts to assist test automation. Wrote automated test scripts to generate reports.
-      \item Implemented the structures and APIs for a secured communication protocol between a server and an SoC.
+      \item Integrated an automated test framework, RobotFramework, to test the behavior of a remote provision tool developed for Marvell SoCs.
+      \item Designed over 100 and implemented over 40 test cases in Python and RobotFramework, that cover the functionality test, multi-threading test, performance test, and memory test.
+      \item Wrote Shell scripts to assist test automation in Linux environment. Wrote automated test scripts to generate reports.
+      \item Used version control tool (Gerrit) to collabrate with teammates.
+      \item Implemented the data structures and APIs using C language for a communication protocol between a server and Marvell SoCs.
     \end{cvitems}
   }
 
@@ -65,8 +69,9 @@
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item Designed a random binary mask to compress the radiation within the field of view (FOV).
         \item Integrated one thermopile sensor and rotating optical mask to acquire compressive infrared signals from human.
+        \item Wrote embedded C software on embedded systems to contrl the stepper motor and collect sensor's data via I2C interface.
         \item Built a physical model that shows the linear relationship among the output signal of sensor, the rotating mask and radiation distributions. Found the relationship could be solved by compressive sensing theory.
-        \item Reconstructed spatial radiation distributions using basis pursuit denoising algorithm to recover localization information.
+        \item Used Matlab to reconstructe spatial radiation distributions with basis pursuit denoising algorithm.
         \item Reached over 90\% accuracy for localization of indoor the human object with a very low cost (less than \$10).
       \end{cvitems}
     }
@@ -94,10 +99,11 @@
 {Sept. 2017 - Mar. 2018} % Date(s)
 {
   \begin{cvitems} % Description(s) of tasks/responsibilities
-    \item Used a single passive infrared (PIR) and an optical shutter embedded with micro-controller unit (MCU) in the device to analyze the occupancy status of the indoor environment, such as presence, localization, and facial direction. 
+    \item Used a single passive infrared (PIR) and an optical shutter embedded with microcontroller unit (MCU) in the device to analyze the occupancy status of the indoor environment, such as presence, localization, and facial direction. 
     \item Utilized an innovative rotating optical shutter in front of the PIR sensor to modulate the infrared radiation in a nonlinear manner. Built a physical model that shows the relationship between the output signal and the mechanical shutter.
-    \item Extracted two features from the output signals from PIR sensors (peak to peak value, and pulse width). 
-    \item Applied machine learning methods (SVM and Neural Network) to improve the performance in predicting and classifying occupancy situations that reached 98\% accuracy in localization.  
+    \item Wrote embedded C software on embedded systems to contrl the servo motor and collect PIR's data via ADC interface.
+    \item Extracted two features using Python from the output signals from PIR sensors (peak to peak value, and pulse width). 
+    \item Applied machine learning methods (SVM and Neural Network) with Python language to improve the performance in predicting and classifying occupancy situations that reached 98\% accuracy in localization.  
     \item Extended the functionality of PIR sensors in indoor occupancy detection with high performance, such as human tracking with 0.44 m RSME, localization with 98\% accuracy and facial direction detection with 83\% accuracy. 
   \end{cvitems}
 }
@@ -112,7 +118,7 @@
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item Utilized the low-power Lavet stepper motor ($<10$mA) to drive a machanical optical shutter on PIR 
         sensors for true presence detection that could detect both stationary and moving occupants.
-        \item Built a long-term experiment platform consists of Raspberry Pi, Pi camera, Shutterd PIR sensors and MCU.
+        \item Built a long-term experiment platform consists of Raspberry Pi (Linux system), Pi camera, shutterd PIR sensors and a microcontroller.
         \item Used computer vision algorithms (YoLo and R-CNN) on videos to extract presence information as groundtruth.
         \item Reached 97\% accuracy for classifying occupied and unoccupied scenes from 31-hour experiment.
       \end{cvitems}
@@ -139,7 +145,9 @@
     {Aug. 2015 - Dec. 2017} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item Embedded Microprocessor Systems Design (\textit{Fall 2016}), Digital Systems Design (\textit{Spring 2016}), Digital Signal Processing: Theory (\textit{Fall 2015}) 
+        \item Embedded Microprocessor Systems Design: Developed software in Assembly language on microprocessors 
+        \item Digital Systems Design: Microcontroller interfaces (ADC, GPIO, I2C)
+        \item Digital Signal Processing Theory: Matlab for DSP algorithms
       \end{cvitems}
     }
 
